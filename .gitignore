@@ -1,11 +1,40 @@
-/data/
-/models/
-.env
+# ── Python ──────────────────────────────────────────────
 __pycache__/
-.ipynb_checkpoints/
 *.pyc
 *.pyo
 *.egg-info/
 dist/
 build/
 .pytest_cache/
+.ipynb_checkpoints/
+
+# ── Environment & secrets ───────────────────────────────
+.env
+.venv/
+venv/
+
+# ── Editor / IDE ────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+
+# ── Claude Code session files ───────────────────────────
+.claude/
+
+# ── Logs ────────────────────────────────────────────────
+*.log
+streamlit.log
+
+# ── MLflow local tracking (regeneratable) ───────────────
+mlruns/
+
+# ── Data: ignore by default, allow specific files ───────
+data/*
+!data/Telco_Customer_Churn.csv
+!data/features.csv
+!data/model_results.json
+!data/eval_artifacts.json
+
+# ── Models: ignore by default, allow production model ───
+models/*
+!models/production_model.pkl
