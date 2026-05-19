@@ -32,6 +32,7 @@ mlruns/
 data/*
 !data/Telco_Customer_Churn.csv
 !data/features.csv
+!data/cleaned.csv
 !data/model_results.json
 !data/eval_artifacts.json
 

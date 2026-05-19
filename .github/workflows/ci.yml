@@ -19,11 +19,6 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Generate pipeline artifacts
-        run: |
-          python src/data/cleaner.py
-          python src/features/run_features.py
-
       - name: Run tests
         run: pytest tests/ -v --tb=short
 
