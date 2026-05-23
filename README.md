@@ -217,6 +217,26 @@ pytest tests/ -v
 
 ---
 
+## 🔭 Future Work
+
+- **Threshold tuning** — optimize the decision threshold beyond the
+  default 0.5 to reflect the actual business cost of missing a churner
+  vs. making an unnecessary retention call.
+
+- **Prediction explanations** — surface the top reasons behind each
+  individual churn prediction so retention managers understand *why*
+  a customer is flagged, enabling more targeted conversations.
+
+- **Batch prediction upload** — allow a retention team to upload their
+  full customer base as a CSV and download a risk-tiered output, rather
+  than predicting one customer at a time.
+
+- **Automated retraining** — schedule periodic model updates as new
+  customer data arrives, keeping predictions current without manual
+  intervention.
+
+---
+
 ## 📁 File Structure
 
 ```
